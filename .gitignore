@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+dist-ssr/
+
+# Local env files
+.env
+.env*.local
+.env.production
+.env.development
+!.env.example
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Reports and temporary files
+.freebuff/
+*.report.html
+lighthouse-report.json
+coverage/

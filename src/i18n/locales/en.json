@@ -1,0 +1,1055 @@
+{
+  "app": {
+    "name": "Pennypath",
+    "title": "Pennypath",
+    "tagline": "Plan it. Grow it.",
+    "subtitle": "Goal-first personal finance",
+    "demo_mode": "Demo Active",
+    "footer_compliance": "PennyPath Bharat Edition • Zero Data Collection • 100% Offline",
+    "offline_badge": "Offline",
+    "online_badge": "Online",
+    "reset_confirm": "Are you sure you want to reset demo data to defaults?",
+    "reset_demo": "Reset Demo Data"
+  },
+  "landing": {
+    "tagline": "Plan it. Grow it.",
+    "subheading": "Personal finance built for India. Envelope budgeting, daily safe-to-spend limits, and goal growth designed for students, households, and first-job earners.",
+    "get_started": "Get Started",
+    "try_demo": "Try Demo",
+    "features": {
+      "offline": "100% Offline Capable",
+      "offline_desc": "Works anywhere without internet, including airplane mode.",
+      "envelopes": "Envelope Budgeting",
+      "envelopes_desc": "Smart Indian expense envelopes for rent, chai, mess, and EMIs.",
+      "privacy": "Zero Data Collection",
+      "privacy_desc": "All records stay strictly encrypted on your local device."
+    }
+  },
+  "auth": {
+    "title": "Welcome to Pennypath",
+    "subtitle": "Log in to sync across devices or continue offline",
+    "email_label": "Email address",
+    "email_placeholder": "you@example.com",
+    "magic_link_btn": "Send Magic Link",
+    "magic_link_sent": "Magic link sent to your inbox!",
+    "or": "or",
+    "google_btn": "Continue with Google",
+    "guest_bypass": "Continue as Guest",
+    "guest_note": "No login or password needed. Works 100% offline.",
+    "demo_shortcut": "Explore with realistic Demo Data"
+  },
+  "demo": {
+    "title": "Select a Demo Persona",
+    "subtitle": "Seeds Pennypath with ~60 days of authentic Indian transactions, active obligations, goals, and mid-month balances. Fully offline.",
+    "chip_label": "Demo mode",
+    "exit_demo": "Exit demo",
+    "choose_persona": "Select Persona",
+    "rohan": {
+      "name": "Rohan Sharma",
+      "role": "First-Job Earner",
+      "age": "24 yrs",
+      "income": "₹38,000 / month",
+      "bio": "Junior software developer living in Bengaluru. Manages PG rent, bike EMI, food runs, and an emergency savings SIP."
+    },
+    "meena": {
+      "name": "Meena Patel",
+      "role": "Household Manager",
+      "age": "38 yrs",
+      "income": "₹55,000 / month",
+      "bio": "Manages family expenses in Ahmedabad: ration kirana, children's school fees, monthly chit fund kitty, and Diwali gold savings."
+    },
+    "aarav": {
+      "name": "Aarav Verma",
+      "role": "Engineering Student",
+      "age": "20 yrs",
+      "income": "₹12,000 / month",
+      "bio": "3rd year college student in Pune. Manages hostel mess dues, 5G data pack, canteen snacks, and saves for a coding laptop."
+    }
+  },
+  "onboarding": {
+    "step_indicator": "Step {{current}} of {{total}}",
+    "back": "Back",
+    "next": "Continue",
+    "step1": {
+      "title": "Welcome to Pennypath",
+      "subtitle": "Choose your preferred language and lifestyle mode to personalize envelopes.",
+      "language_heading": "Preferred Language",
+      "mode_heading": "Who are you budgeting for?",
+      "modes": {
+        "student": {
+          "title": "Student",
+          "desc": "Managing monthly pocket money, hostel mess, study books, canteen fun, and campus life."
+        },
+        "household": {
+          "title": "Household",
+          "desc": "Managing monthly family ration, kids school fees, utilities, chit fund, and festive gold."
+        },
+        "earner": {
+          "title": "First-Job Earner",
+          "desc": "Managing first monthly salary, PG rent, bike EMI, weekend outings, and starter investments."
+        }
+      }
+    },
+    "step2": {
+      "title": "Your Monthly Income",
+      "subtitle": "How much money comes into your hands every month?",
+      "labels": {
+        "student": "Monthly Pocket Money / Allowance",
+        "household": "Total Household Monthly Income",
+        "earner": "Monthly Take-Home Salary / Income"
+      },
+      "placeholder": "Enter amount in ₹ (e.g. 38,000)",
+      "quick_chips": "Popular amounts:",
+      "helper": "Enter total amount in Indian Rupees (₹). Strictly positive numbers."
+    },
+    "step3": {
+      "title": "Monthly Savings Goal",
+      "question": "How much do you want to save every month?",
+      "subtitle": "We will secure this amount first before allocating daily spending money.",
+      "placeholder": "Enter savings target (e.g. 5,000)",
+      "presets": {
+        "ten": "10% (Gentle)",
+        "twenty": "20% (Recommended)",
+        "thirty": "30% (Aggressive)"
+      },
+      "live_hint_title": "Live Feasibility Check",
+      "hint_percentage": "This is {{percent}}% of your monthly income."
+    },
+    "step4": {
+      "title": "Fixed Monthly Payments",
+      "subtitle": "Add fixed recurring commitments like rent, EMIs, chit fund, or bills.",
+      "add_btn": "Add Fixed Payment",
+      "name_label": "Payment Name",
+      "name_placeholder": "e.g., Bike EMI, PG Rent, Chit Fund",
+      "type_label": "Payment Type",
+      "amount_label": "Amount (₹)",
+      "due_day_label": "Due Day of Month (1 - 31)",
+      "save_payment": "Add Commitment",
+      "types": {
+        "emi": "Loan EMI",
+        "rent": "Rent / PG",
+        "subscription": "Subscription / Membership",
+        "chit": "Chit Fund / Kitty",
+        "insurance": "Insurance (Life / Health)",
+        "utilities": "Electricity / Gas / Bills",
+        "other": "Other Recurring Payment"
+      },
+      "emi_calculator": {
+        "toggle": "Calculate EMI with loan details",
+        "principal": "Loan Principal Amount (₹)",
+        "rate": "Annual Interest Rate (% p.a.)",
+        "tenure": "Total Tenure (Months)",
+        "result_emi": "Computed Monthly EMI:",
+        "remaining_principal": "Remaining Balance:",
+        "apply_emi": "Use this EMI"
+      },
+      "empty_commitments": "No fixed payments added yet. You can skip this or add your EMIs/rent above.",
+      "total_fixed": "Total Fixed Commitments:"
+    },
+    "step5": {
+      "title": "Review Your Plan",
+      "subtitle": "Here is your calculated discretionary spending money for each month and day.",
+      "discretionary_label": "Monthly Discretionary Budget (D)",
+      "daily_label": "Safe to spend every day:",
+      "breakdown": {
+        "income": "Monthly Income",
+        "fixed": "Fixed Payments",
+        "savings": "Savings Target"
+      },
+      "formula": "D = Income ({{income}}) - Fixed ({{fixed}}) - Savings ({{savings}})",
+      "shortfall_alert": {
+        "title": "Deficit Detected: Shortfall of {{shortfall}}",
+        "desc": "Your fixed payments and savings target exceed your monthly income. Check the engine's fixes below to balance your budget."
+      },
+      "healthy_notice": "Great balance! Your daily discretionary allowance gives you healthy room to spend without touching savings.",
+      "fixes_heading": "Recommended Fixes from Financial Engine",
+      "apply_fix": "Apply Fix",
+      "confirm_btn": "Confirm & Start Budgeting"
+    }
+  },
+  "feasibility": {
+    "shortfall": "Warning: Commitments exceed income! You will face a budget deficit.",
+    "tight": "Caution: Very tight margin (< ₹200/day). You may feel pinched for daily essentials.",
+    "ideal": "Recommended: 20%+ savings rate puts you on the golden path to wealth.",
+    "healthy": "Balanced: Healthy allocation leaving comfortable room for discretionary spending."
+  },
+  "fixes": {
+    "reduce_savings": {
+      "title": "Adjust Monthly Savings Target",
+      "desc": "Lowering your monthly savings target to ₹{{value}} frees up ₹{{freed}} to cover daily essentials.",
+      "action": "Set savings to ₹{{value}}"
+    },
+    "reduce_fixed": {
+      "title": "Trim Flexible Fixed Costs",
+      "desc": "Review non-essential subscriptions or renegotiate commitments to reduce fixed expenses by ₹{{freed}}.",
+      "action": "Reduce fixed costs"
+    },
+    "extend_timeline": {
+      "title": "Extend Goal Timeline",
+      "desc": "Spread your savings goal over a few extra months to reduce immediate monthly pressure.",
+      "action": "Extend timeline"
+    },
+    "increase_income": {
+      "title": "Bridge Gap with Secondary Income",
+      "desc": "Earn an additional ₹{{value}} through freelancing or part-time work to balance this plan.",
+      "action": "Target ₹{{value}} income"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "positive_only": "Amount must be a positive number",
+    "numeric_only": "Please enter numbers only",
+    "due_day_range": "Due day must be between 1 and 31",
+    "income_min": "Income must be greater than zero",
+    "savings_max": "Savings cannot exceed total income"
+  },
+  "greeting": {
+    "morning": "Good morning, {{name}}",
+    "afternoon": "Good afternoon, {{name}}",
+    "evening": "Good evening, {{name}}",
+    "night": "Welcome back, {{name}}",
+    "persona": "First-Job Earner Mode",
+    "switch_lang": "हिंदी"
+  },
+  "month": {
+    "october_2026": "October 2026",
+    "november_2026": "November 2026",
+    "december_2026": "December 2026"
+  },
+  "hero": {
+    "title": "Safe to spend today",
+    "subtext": "{{amount}} left for the month, {{days}} days to go",
+    "variable_used": "Variable budget used: {{percent}}%",
+    "daily_label": "Calculated daily allowance",
+    "depleted_alert": "Variable budget exhausted for this month. Essential needs only."
+  },
+  "savings": {
+    "title": "Savings Tracker",
+    "saved_so_far": "Saved so far",
+    "target": "Target",
+    "projected": "Projected month-end",
+    "view_plan": "View Plan",
+    "on_track": "On Track",
+    "below_target": "Below Target",
+    "warning_msg": "Projected savings is below your monthly target. Tap to adjust your Plan.",
+    "ahead_msg": "Great job! You are pacing ahead of your savings goal this month."
+  },
+  "health": {
+    "title": "Financial Health Score",
+    "excellent": "Excellent",
+    "fair": "Fair",
+    "at_risk": "Needs Attention",
+    "subbar": {
+      "savings_rate": "Savings Rate",
+      "budget_discipline": "Budget Discipline",
+      "goal_cushion": "Goal Cushion",
+      "bills_dues": "Bills & Dues"
+    },
+    "tips": {
+      "no_income": "Enter your monthly income to start receiving personal health recommendations.",
+      "reing_in_overspending": "Weekend Hangouts has crossed its cap. Trimming upcoming outings will protect your savings target.",
+      "boost_savings_rate": "Your savings pace is under 20%. Try setting aside ₹1,000 extra to buffer unexpected expenses.",
+      "clear_upcoming_dues": "Upcoming bill due in 7 days. Ensure funds are set aside to avoid late fees.",
+      "fund_emergency_goal": "Your emergency SIP needs funding. Prioritize it before discretionary purchases.",
+      "excellent_trajectory": "Healthy balance! Your spending pace and savings commitments are well protected."
+    }
+  },
+  "categories": {
+    "title": "Category Caps",
+    "subtitle": "Top 5 categories (spent vs cap)",
+    "spent": "Spent",
+    "cap": "Cap",
+    "over_limit": "Over cap",
+    "near_limit": "Near limit (≥80%)",
+    "fine": "Within limit"
+  },
+  "dues": {
+    "title": "Next 7 Days Dues",
+    "subtitle": "Upcoming obligations & reminders",
+    "view_all": "View all reminders",
+    "chip": {
+      "due_today": "Due today",
+      "days_left": "{{count}}d left",
+      "days_left_one": "1d left",
+      "overdue": "Overdue",
+      "paid": "Paid"
+    },
+    "empty": "No dues upcoming in the next 7 days.",
+    "mark_paid": "Mark as paid",
+    "mark_unpaid": "Mark unpaid"
+  },
+  "fab": {
+    "label": "Quick Add",
+    "title": "Add New Expense",
+    "amount": "Amount (₹)",
+    "category": "Category / Envelope",
+    "note": "Note (optional)",
+    "note_placeholder": "e.g., Chai & snacks, cab, dinner",
+    "cancel": "Cancel",
+    "save": "Add Expense",
+    "saving": "Saving...",
+    "presets": "Quick Presets",
+    "success": "Added {{amount}} to {{category}}!"
+  },
+  "common": {
+    "loading": "Loading card...",
+    "error": "Failed to load data.",
+    "retry": "Retry",
+    "empty": "No data available",
+    "close": "Close",
+    "demo_badge": "Rohan Demo Active",
+    "simulate_tx": "Simulate Expense",
+    "reduced_motion": "Reduced Motion",
+    "undo": "Undo",
+    "expense_added_toast": "Added {{amount}} to {{category}}",
+    "income_added_toast": "Added income {{amount}} ({{description}})",
+    "undone_toast": "Transaction undone successfully",
+    "save": "Save",
+    "cancel": "Cancel",
+    "viewDesign": "Design Showcase"
+  },
+  "budget": {
+    "cat": {
+      "tuition_books": "Tuition & Books",
+      "food_mess": "Mess & Meals",
+      "canteen_fun": "Canteen & Fun",
+      "transport": "Transport",
+      "laptop_goal": "Laptop Goal Fund",
+      "groceries_ration": "Groceries & Ration",
+      "utilities_bills": "Electricity & Bills",
+      "kids_education": "Children's School",
+      "household_buffer": "Household Buffer",
+      "diwali_gold_fund": "Diwali & Gold Savings",
+      "family_dining": "Family Dining Out",
+      "emergency_stash": "Emergency Stash",
+      "pg_rent": "PG Rent",
+      "food_groceries": "Food & Groceries",
+      "commute": "Daily Commute",
+      "weekend_hangouts": "Weekend Hangouts",
+      "gadgets_shopping": "Gadgets & Shopping",
+      "emergency_sip": "Emergency SIP",
+      "upskilling_courses": "Upskilling & Courses",
+      "income": "Monthly Income"
+    },
+    "title": "Budget & Envelopes",
+    "monthly_income": "Monthly Income",
+    "total_spent": "Total Spent",
+    "remaining": "Remaining Safe-to-Spend",
+    "health_score": "Savings Health",
+    "quick_add": "Quick Add",
+    "quick_add_100": "+₹100",
+    "add_expense": "Add Expense",
+    "add_envelope": "Add Envelope",
+    "envelope_name": "Envelope Name",
+    "envelope_allocated": "Allocated Amount (₹)",
+    "envelope_type": "Envelope Type",
+    "type_need": "Need (Essential)",
+    "type_want": "Want (Discretionary)",
+    "type_goal": "Goal (Savings)",
+    "type_buffer": "Buffer (Safety)",
+    "breakdown_chart": "Spending Breakdown",
+    "over_budget_notice": "One or more envelopes have exceeded allocation!",
+    "status_good": "Healthy budget balance",
+    "status_alert": "Over-budget envelopes detected"
+  },
+  "reminders": {
+    "title": "Due Reminders",
+    "subtitle": "Track upcoming bills, EMIs, and recurring commitments",
+    "add_reminder": "Add Reminder",
+    "empty": "No upcoming reminders.",
+    "overdue": "Overdue",
+    "next_7_days": "Next 7 Days",
+    "later": "Later",
+    "paid_history": "Paid / Completed",
+    "mark_paid": "Mark as Paid",
+    "mark_unpaid": "Mark Unpaid",
+    "status_paid": "Paid",
+    "snooze": "Snooze",
+    "snooze_1d": "1 Day",
+    "snooze_3d": "3 Days",
+    "add_to_calendar": "Add to calendar",
+    "filter_all": "All",
+    "filter_pending": "Pending",
+    "filter_paid": "Paid",
+    "notifications_denied_banner": "Browser notifications are blocked. PennyPath will display upcoming due dates here in your in-app alerts instead.",
+    "notifications_permission_title": "Get alerts before bills & EMIs are due",
+    "notifications_permission_body": "PennyPath alerts you 3 days and 1 day before payments are due, plus on the day. Never miss a due date or pay penalties.",
+    "notifications_enable_btn": "Allow Notifications",
+    "notifications_skip_btn": "Not Now",
+    "mark_paid_modal_title": "Mark as Paid",
+    "mark_paid_log_expense_prompt": "Log this payment as an expense in your budget?",
+    "mark_paid_category_label": "Budget Category / Envelope",
+    "mark_paid_confirm_btn": "Confirm & Log",
+    "mark_paid_only_btn": "Mark Paid Only",
+    "items": {
+      "pg_rent_transfer": "PG Rent Transfer",
+      "bike_loan_emi": "Bike Loan EMI (Bajaj Pulsar)",
+      "index_fund_sip": "Index Fund SIP",
+      "credit_card_bill": "Credit Card Bill",
+      "cloud_ai_sub": "Cloud & AI Subscription",
+      "electricity_bill": "Electricity Bill",
+      "piped_gas_cylinder": "Piped Gas Cylinder",
+      "school_bus_fee": "School Bus Fee",
+      "wifi_broadband": "WiFi Broadband",
+      "semester_exam_fee": "Semester Exam Fee",
+      "hostel_mess_bill": "Hostel Mess Bill",
+      "mobile_recharge": "Mobile Recharge"
+    }
+  },
+  "tx": {
+    "title": "Transactions & Fast Entry",
+    "subtitle": "Track daily expenses, envelopes, and income",
+    "add_expense": "Add Expense",
+    "quick_income": "Quick Income",
+    "paste_sms": "Paste SMS",
+    "search_placeholder": "Search note or merchant...",
+    "filter_category": "Category",
+    "filter_all_categories": "All Categories",
+    "filter_date": "Date",
+    "filter_all_time": "All Time",
+    "filter_today": "Today",
+    "filter_this_week": "This Week",
+    "filter_this_month": "This Month",
+    "filter_payment_mode": "Payment Mode",
+    "filter_all_modes": "All Modes",
+    "payment_mode": {
+      "upi": "UPI",
+      "cash": "Cash",
+      "card": "Card",
+      "other": "Other"
+    },
+    "income_type": {
+      "bonus": "Bonus",
+      "gift": "Gift / Shagun",
+      "freelance": "Freelance",
+      "allowance": "Pocket Money",
+      "cashback": "Cashback",
+      "other": "Other Income"
+    },
+    "student": {
+      "weekly_view": "This Week",
+      "all_view": "All Transactions",
+      "pocket_money_left": "Pocket money left this week",
+      "weekly_budget": "of {{amount}} weekly budget",
+      "safe_daily": "Safe daily spend: {{amount}}/day",
+      "days_left": "{{count}} days left in week"
+    },
+    "household": {
+      "envelope_view": "Envelope View",
+      "transactions_view": "Transactions",
+      "remaining_cash": "Remaining Cash",
+      "allocated": "Allocated",
+      "spent": "Spent",
+      "add_spent": "Add Expense"
+    },
+    "sms": {
+      "title": "Paste UPI Debit SMS",
+      "subtitle": "Parses amount, merchant & date. Never auto-saves.",
+      "placeholder": "Paste bank debit SMS here...",
+      "preview": "Preview Parsed Transaction",
+      "amount": "Amount",
+      "merchant": "Merchant / Note",
+      "date": "Date",
+      "category": "Envelope Category",
+      "confirm_save": "Confirm & Save Expense",
+      "parse_failed": "Could not extract debit amount. Please paste a valid bank debit SMS.",
+      "sample_hdfc": "Sample HDFC",
+      "sample_sbi": "Sample SBI",
+      "sample_icici": "Sample ICICI"
+    },
+    "edit_title": "Edit Transaction",
+    "delete_title": "Delete Transaction",
+    "delete_confirm": "Are you sure you want to delete this transaction?",
+    "delete_btn": "Delete",
+    "empty": "No transactions found matching your filters.",
+    "showing_count": "Showing {{count}} of {{total}} transactions",
+    "load_more": "Load More",
+    "expense_added_toast": "Expense of ₹{{amount}} logged successfully!",
+    "income_added_toast": "Income of ₹{{amount}} credited successfully!"
+  },
+  "nav": {
+    "home": "Home",
+    "budget": "Budget",
+    "plan": "Plan",
+    "insights": "Insights",
+    "add": "Add",
+    "goals": "Goals",
+    "calculators": "Calculators",
+    "reminders": "Reminders",
+    "invest": "Invest Lab",
+    "lessons": "Learn",
+    "more": "More"
+  },
+  "calculators": {
+    "title": "Calculators Hub",
+    "subtitle": "Interactive tools connected directly to your monthly budget plan.",
+    "connected_plan_banner": "Connected to Plan",
+    "plan_disposable": "Plan's Disposable Buffer",
+    "plan_income": "Monthly Income",
+    "plan_obligations": "Fixed Obligations",
+    "plan_dti": "Current Debt-to-Income",
+    "switch_persona_preview": "Test Persona Plan",
+    "tab_emi": "EMI Calculator",
+    "tab_goal": "Goal Calculator",
+    "tab_compound": "Compound / SIP",
+    "affordability": {
+      "button": "Can I afford this?",
+      "title": "Plan Affordability Check",
+      "yes_title": "Affordable (Yes)",
+      "careful_title": "Proceed with Caution (Careful)",
+      "no_title": "Not Recommended (No)",
+      "yes_affordable": "Comfortably affordable! The EMI requires {{ratio}}% of your monthly disposable buffer (leaving {{remaining}}/mo) and maintains a safe debt-to-income ratio of {{dti}}%.",
+      "careful_tight": "Caution: EMI consumes {{ratio}}% of your disposable buffer (leaving {{remaining}}/mo) and pushes debt-to-income to {{dti}}%. Feasible, but leaves very little buffer for emergencies.",
+      "no_shortfall": "Your plan currently has zero or negative disposable income (shortfall). Taking on this EMI would worsen your monthly deficit.",
+      "no_exceeds_disposable": "Monthly EMI of {{emi}} exceeds your monthly disposable budget of {{disposable}} by {{diff}}. This would cause an immediate monthly shortfall.",
+      "no_high_dti": "This loan would push your debt-to-income ratio to {{dti}}%, well beyond the prudent 50% safety ceiling.",
+      "no_high_commitments": "Total fixed obligations would consume {{ratio}}% of your monthly income, leaving virtually no margin for food and daily necessities."
+    },
+    "emi": {
+      "title": "Loan EMI & Reducing Balance",
+      "subtitle": "Calculate monthly installments, total interest, amortization schedule, and prepayment savings.",
+      "loan_amount": "Loan Principal (₹)",
+      "interest_rate": "Interest Rate (% p.a.)",
+      "tenure": "Tenure",
+      "tenure_months": "Tenure (Months)",
+      "tenure_years": "Years",
+      "monthly_emi": "Monthly EMI",
+      "total_interest": "Total Interest Paid",
+      "total_payable": "Total Payable",
+      "principal_ratio": "Principal Share",
+      "interest_ratio": "Interest Share",
+      "breakdown_title": "Principal vs. Interest Breakdown",
+      "schedule_title": "Amortization Table",
+      "show_schedule": "View Amortization Schedule ({{months}} Months)",
+      "hide_schedule": "Hide Amortization Schedule",
+      "month": "Month",
+      "principal": "Principal Amount",
+      "interest": "Total Interest",
+      "balance": "Remaining Balance",
+      "total_payment": "Total Repayment",
+      "prepayment_title": "Prepayment What-If Analysis",
+      "prepayment_subtitle": "See how much interest and tenure you save by paying extra each month.",
+      "extra_per_month": "Extra Prepayment (₹/month)",
+      "months_saved": "Months Saved",
+      "interest_saved": "Interest Saved",
+      "new_duration": "New Duration",
+      "add_obligation_btn": "Add as obligation",
+      "obligation_added": "Loan added as monthly obligation to your plan!",
+      "rate_hint_gold": "6% (Govt / Gold Loan)",
+      "rate_hint_home": "8.5% - 9.5% (Home Loan)",
+      "rate_hint_personal": "12% - 16% (Personal / Vehicle)",
+      "sample_schedule": "Amortization Breakdown (Initial Months)"
+    },
+    "goal": {
+      "title": "Goal Calculator",
+      "subtitle": "Determine the exact monthly SIP required to achieve your future financial target.",
+      "goal_name": "Goal Name",
+      "goal_name_placeholder": "e.g. Coding Laptop, Diwali Gold, Emergency Fund",
+      "target_amount": "Target Amount",
+      "target_date": "Target Date",
+      "expected_return": "Expected Annual Return (% p.a.)",
+      "inflation_toggle": "Include inflation adjustment",
+      "inflation_rate": "Annual Inflation Rate (% p.a.)",
+      "required_sip": "Required Monthly SIP",
+      "inflation_adjusted_target": "Inflation-Adjusted Target",
+      "total_invested": "Total Capital Invested",
+      "estimated_returns": "Estimated Returns",
+      "plan_fit_btn": "Does this fit my plan?",
+      "fit_title": "Plan Feasibility Check",
+      "fit_yes": "Fits Comfortably",
+      "fit_careful": "Tight Fit",
+      "fit_no": "Exceeds Disposable Budget",
+      "fit_yes_desc": "Fits comfortably! This goal takes only {{ratio}}% of your monthly disposable buffer, leaving {{remaining}}/month intact.",
+      "fit_careful_desc": "Tight fit: This SIP consumes {{ratio}}% of your disposable buffer, leaving {{remaining}}/month for other needs.",
+      "fit_no_desc": "Required monthly SIP of {{sip}} exceeds your monthly disposable income of {{disposable}} by {{diff}}/month.",
+      "save_goal_btn": "Save as goal",
+      "goal_saved": "Goal successfully saved to your plan!"
+    },
+    "compound": {
+      "title": "Compound Growth & Inflation",
+      "subtitle": "Compare lump sum and monthly SIP growth, and explore the exponential advantage of starting early.",
+      "mode_sip": "Monthly SIP",
+      "mode_lump_sum": "Lump Sum",
+      "monthly_amount": "Monthly Investment",
+      "lump_sum_amount": "Lump Sum Deposit",
+      "annual_rate": "Expected Annual Return (% p.a.)",
+      "years": "Duration (Years)",
+      "frequency": "Compounding Frequency",
+      "freq_quarterly": "Quarterly",
+      "freq_annual": "Annual",
+      "freq_half_yearly": "Half-Yearly (2x/year)",
+      "freq_monthly": "Monthly",
+      "total_invested": "Total Invested",
+      "wealth_gained": "Wealth Gained",
+      "maturity_value": "Total Wealth Value",
+      "chart_title": "Wealth Growth Trajectory Over Time",
+      "legend_invested": "Capital Invested",
+      "legend_wealth": "Total Wealth Value",
+      "early_title": "Power of Starting Early",
+      "early_subtitle": "Comparison: Starting Today vs. Delaying by 5 Years",
+      "start_now": "Start Today",
+      "start_delayed": "Start 5 Years Later",
+      "cost_of_delay": "Cost of 5-Year Delay",
+      "wealth_difference": "Wealth Difference",
+      "multiplier_text": "Starting 5 years earlier yields {{multiplier}}x the accumulated wealth!",
+      "principal": "Initial Deposit (₹)",
+      "interest_rate": "Nominal Rate (% p.a.)",
+      "tenure_years": "Time Horizon (Years)",
+      "maturity_amount": "Nominal Maturity Value",
+      "inflation_rate": "Estimated Inflation (% p.a.)",
+      "real_purchasing_power": "Real Purchasing Power (Today's Value)",
+      "inflation_warning": "At 6% inflation, your future money buys significantly less than its face value."
+    },
+    "accordion": {
+      "title": "How is this calculated?",
+      "plain_title": "Plain Language Explanation",
+      "formula_title": "Mathematical Formula",
+      "emi_plain": "An Equated Monthly Installment (EMI) is a fixed monthly payment where every installment covers both accrued monthly interest and part of the principal. In the early months, interest makes up most of the installment; over time, the principal portion steadily increases until the loan is fully paid off.",
+      "emi_formula": "E = P × [ r(1 + r)^n ] / [ (1 + r)^n - 1 ]",
+      "emi_where": "Where E = Monthly EMI, P = Principal loan amount, r = Monthly interest rate (Annual Rate / 12 / 100), n = Loan tenure in months.",
+      "goal_plain": "Because Systematic Investment Plan (SIP) installments are deposited at the start of each month (annuity-due), every rupee immediately compounds. When inflation adjustment is enabled, your target corpus is compounded forward at the inflation rate to preserve its future purchasing power.",
+      "goal_formula": "Monthly SIP = FV_adjusted / [ (((1 + r)^n - 1) / r) × (1 + r) ]\nFV_adjusted = Target × (1 + inflation)^years",
+      "goal_where": "Where Target = Target corpus in today's money, r = Monthly return rate, n = Total months, inflation = Annual inflation rate.",
+      "compound_plain": "Compounding means your investment earnings earn their own earnings over time. For monthly SIPs, money compounds on every new deposit. For lump-sum deposits, interest compounds based on the chosen compounding frequency. Starting even a few years earlier delivers a dramatic exponential multiplier.",
+      "compound_formula": "SIP FV = P × [ ((1 + r)^n - 1) / r ] × (1 + r)\nLump Sum A = P × (1 + r / m)^(m × t)",
+      "compound_where": "Where P = Monthly deposit or Initial principal, r = Annual return rate, m = Compounding frequency per year, t = Years, n = Total months (t × 12)."
+    },
+    "validation": {
+      "non_negative": "Amount cannot be negative",
+      "positive_required": "Must be greater than 0",
+      "valid_number": "Please enter a valid number",
+      "tenure_min": "Tenure must be at least 1 month",
+      "rate_range": "Interest rate must be between 0% and 50%"
+    },
+    "tab_sip": "SIP Wealth",
+    "sip": {
+      "mode_growth": "Target Corpus from Monthly SIP",
+      "mode_target": "Required Monthly SIP for Goal",
+      "monthly_investment": "Monthly Investment (₹)",
+      "target_amount": "Target Goal Amount (₹)",
+      "tenure_years": "Investment Tenure (Years)",
+      "expected_return": "Expected Annual Return (% p.a.)",
+      "invested_amount": "Total Invested",
+      "estimated_returns": "Estimated Returns",
+      "total_maturity": "Total Expected Value",
+      "required_sip": "Required Monthly SIP",
+      "disclaimer": "Calculations are conceptual estimates based on historical CAGR. Past returns do not guarantee future performance."
+    }
+  },
+  "plan": {
+    "title": "Monthly Financial Plan",
+    "desc": "Adjust your envelopes, targets, and savings allocation to restore balance.",
+    "return_home": "Back to Dashboard",
+    "income": "Monthly Income",
+    "income_hint": "Take-home salary & net earnings",
+    "savings_target": "Savings Target",
+    "savings_hint": "Goal contribution & emergency fund",
+    "fixed_obligations": "Fixed Obligations",
+    "fixed_hint": "Auto-summed from obligations list",
+    "tap_to_edit": "Tap to edit list",
+    "disposable": "Disposable Allowance (D)",
+    "safe_daily": "Safe daily variable allowance",
+    "shortfall": "Projected Shortfall",
+    "shortfall_banner": "Expenditure exceeds income. Apply an engine fix below to balance your draft plan.",
+    "healthy_banner": "Your budget plan is well-balanced. Category caps sum strictly to disposable income.",
+    "fixes_title": "Engine Recommended Fixes",
+    "apply_fix": "Apply to Draft",
+    "category_caps_title": "Envelope Allocations & Strategy",
+    "why_caps": "Why these caps?",
+    "what_if_title": "What-If Simulation Active",
+    "what_if_desc": "Temporary changes are local and never affect your live ledger or dashboard until confirmed.",
+    "save_plan": "Save Plan",
+    "saving": "Saving...",
+    "plan_saved": "Plan saved successfully! Home dashboard updated.",
+    "discard_changes": "Discard Changes",
+    "obligations_title": "Obligations Manager",
+    "add_obligation": "Add Obligation",
+    "edit_obligation": "Edit Obligation",
+    "delete_obligation": "Delete",
+    "remaining_tenure": "Remaining Tenure",
+    "payoff_date": "Payoff Date",
+    "locked": "Locked",
+    "unlocked": "Unlocked",
+    "rebalanced_notice": "Editing one slider rebalances others proportionally. Total always equals disposable income.",
+    "loan_principal": "Loan Principal (₹)",
+    "interest_rate": "Annual Interest Rate (% p.a.)",
+    "total_tenure": "Total Tenure (Months)",
+    "remaining_months": "Remaining Months",
+    "due_day": "Due Day of Month",
+    "obligation_type": "Obligation Type",
+    "obligation_title": "Title / Name",
+    "obligation_amount": "Monthly Amount (₹)"
+  },
+  "insights": {
+    "title": "Financial Insights",
+    "subtitle": "Deep analytics across envelopes, spending pace, savings opportunities, and health score",
+    "tabs": {
+      "trends": "Trends & Savings",
+      "health_detail": "Health Detail & +10 Pts"
+    },
+    "filters": {
+      "all": "All",
+      "needs": "Needs",
+      "wants": "Wants"
+    },
+    "category_breakdown": {
+      "title": "Category Breakdown",
+      "subtitle": "Ranked spending & envelope distribution",
+      "total_spent": "Total Spent",
+      "categories": "Categories",
+      "rank_category": "Category",
+      "amount_share": "Amount & Share",
+      "no_data": "No expense transactions recorded"
+    },
+    "mom": {
+      "title": "Month-over-Month Comparison",
+      "subtitle": "Spend vs Income vs Saved across active months",
+      "no_data": "Not enough historical data"
+    },
+    "where_to_save": {
+      "title": "Where You Can Save",
+      "subtitle": "Smart discretionary reduction converted into 5-year compounding SIP wealth",
+      "potential_wealth": "5-Yr Wealth Potential",
+      "no_wants": "No discretionary want expenses logged yet"
+    },
+    "pace": {
+      "title": "Spending Pace vs Ideal Pace",
+      "subtitle": "Cumulative daily expenditure compared against linear budget run-rate",
+      "no_data": "No budget pace available"
+    },
+    "health": {
+      "four_pillars": "The Four Health Pillars",
+      "add_10_title": "How to Add 10 Points",
+      "add_10_subtitle": "High-leverage actions modeled by the engine to quickly advance to the next health tier"
+    },
+    "weekly": {
+      "title": "Weekly Summary",
+      "no_data": "No transactions logged this week"
+    }
+  },
+  "modes": {
+    "student": "Student",
+    "household": "Household",
+    "earner": "First-Job Earner"
+  },
+  "badge": {
+    "need": "Need",
+    "want": "Want",
+    "saving": "Saving",
+    "urgent": "Urgent"
+  },
+  "buttons": {
+    "primary": "Confirm",
+    "secondary": "Cancel",
+    "danger": "Delete",
+    "loading": "Processing..."
+  },
+  "empty": {
+    "addFirst": "Add your first entry",
+    "noTransactions": "No transactions found",
+    "noTransactionsDesc": "Start adding expenses or seed demo data to explore."
+  },
+  "design": {
+    "title": "Pennypath Design System",
+    "subtitle": "Warm Indian Bharat FinTech aesthetic with WCAG AA compliance.",
+    "paletteTitle": "1. Color Tokens & Palette",
+    "contrastTitle": "2. Contrast Compliance Audit",
+    "componentsTitle": "3. UI Components Showcase",
+    "interactiveTitle": "4. Interactive Testing Playground"
+  },
+  "modal": {
+    "title": "Confirm Action",
+    "description": "Please confirm your action before proceeding.",
+    "confirm": "Confirm"
+  },
+  "stat": {
+    "monthlyBudget": "Monthly Budget",
+    "spentSoFar": "Spent So Far",
+    "savingsRate": "Savings Rate",
+    "emergencyFund": "Emergency Cushion"
+  },
+  "toast": {
+    "savedSuccess": "Saved successfully!",
+    "errorOccurred": "An error occurred.",
+    "infoTip": "Tip updated."
+  },
+  "invest": {
+    "sample_data_badge": "sample data",
+    "title": "Invest Lab",
+    "compliance_banner": "SEBI Investor Education Framework",
+    "compliance_sub": "Educational asset allocation simulator. No real money transactions or stock tips.",
+    "emergency_checker": "Step 1: Emergency Fund Readiness",
+    "emergency_desc": "Before investing in market assets, ensure your 3-6 month safety buffer is funded.",
+    "current_savings": "Current Emergency Savings (₹)",
+    "monthly_expenses": "Mandatory Monthly Expenses (₹)",
+    "emergency_score_ready": "Safety Shield Ready",
+    "emergency_score_not_ready": "Safety Buffer Incomplete",
+    "asset_simulator": "Step 2: Asset Allocation Simulator",
+    "simulator_desc": "Simulate an ideal asset mix between debt, equities, gold, and liquid funds.",
+    "risk_tolerance": "Risk Tolerance",
+    "horizon": "Investment Horizon",
+    "horizon_years": "{{years}} Years",
+    "allocation_debt": "Fixed Income / FD",
+    "allocation_equity": "Equity Index",
+    "allocation_gold": "Sovereign / Digital Gold",
+    "allocation_liquid": "Liquid Buffer",
+    "market_benchmarks": "Live Market Rate Benchmarks",
+    "last_updated": "Last updated",
+    "instruments_title": "Educational Instrument Profiles",
+    "instruments": {
+      "bank_fd": {
+        "name": "Bank Fixed Deposit (FD)"
+      },
+      "liquid_fund": {
+        "name": "Liquid Mutual Fund"
+      },
+      "gold_etf": {
+        "name": "Gold ETF / Digital Gold"
+      },
+      "index_fund": {
+        "name": "Nifty 50 Index Fund"
+      }
+    }
+  },
+  "goals": {
+    "title": "Financial Goals",
+    "subtitle": "Target-first savings for life milestones",
+    "create_goal": "Create New Goal",
+    "contribute": "Add Funds",
+    "target_amount": "Target Amount (₹)",
+    "target_date": "Target Date",
+    "category": "Category",
+    "priority": "Priority",
+    "priority_high": "High Priority",
+    "priority_medium": "Medium Priority",
+    "priority_low": "Low Priority",
+    "monthly_target_needed": "Monthly Target Needed",
+    "goal_completed": "Goal Completed!",
+    "items": {
+      "diwali_gold_fund": "Diwali Gold Savings",
+      "school_annual_term": "School Annual Fee",
+      "three_month_emergency": "3-Month Emergency Stash",
+      "laptop_fund": "Coding Laptop Fund",
+      "cert_exam": "Certification Exam Fee",
+      "first_bike": "Bike Down Payment",
+      "emergency_corpus": "Emergency Corpus",
+      "nifty_index_corpus": "Nifty Index Wealth Fund",
+      "diwali_gold_coin": "Diwali 24K Gold Coin",
+      "custom_goal": "Personal Goal"
+    }
+  },
+  "lessons": {
+    "title": "Micro-Lessons",
+    "subtitle": "Bite-sized, practical personal finance in <= 90 seconds",
+    "minutes": "min read",
+    "completed": "Completed",
+    "not_completed": "Not completed",
+    "read": "Read lesson",
+    "core_principle": "Core Principle",
+    "quiz_title": "Quick Knowledge Check",
+    "check_answer": "Check Answer",
+    "correct_banner": "Correct! Outstanding financial acumen.",
+    "incorrect_banner": "Not quite right. Review the explanation below.",
+    "try_it_title": "Try It with Your Data",
+    "try_it_desc": "Interactive simulation powered by your profile & live demo figures",
+    "streak_badge": "{{count}} Lesson Streak",
+    "student_streak_banner": "🎓 Student Study Streak: {{count}} lessons finished! Keep your pocket-money habits sharp!",
+    "contextual_badge": "Recommended for You",
+    "recommended_reason": "Surfaced based on your current finances",
+    "filter_all": "All Lessons",
+    "filter_budgeting": "Budgeting",
+    "filter_investing": "Investing",
+    "filter_safety": "Safety & Debt",
+    "reset_progress": "Reset Lesson Progress",
+    "tags": {
+      "basics": "Basics",
+      "budgeting": "Budgeting",
+      "safety": "Safety",
+      "debt": "Debt & EMI",
+      "investing": "Investing",
+      "household": "Household",
+      "student": "Student"
+    },
+    "contextual_cards": {
+      "wants_overspent_title": "Overspending on Wants?",
+      "wants_overspent_desc": "Your leisure or entertainment envelope crossed its cap. Learn the Needs vs Wants envelope filter.",
+      "emi_active_title": "Managing an Active EMI?",
+      "emi_active_desc": "Understand how reducing balance interest works and how to spot hidden no-cost EMI charges.",
+      "emergency_low_title": "Safety Buffer Under Target",
+      "emergency_low_desc": "Protect yourself from unexpected shocks. Learn how to build a 3-6 month emergency fund.",
+      "tight_budget_title": "Daily Allowance Feels Pinched?",
+      "tight_budget_desc": "See why the textbook 50/30/20 rule fails in Indian cities and how PennyPath adapts it.",
+      "idle_cash_title": "Inflation Eats Bank Deposits",
+      "idle_cash_desc": "Cash in a 3% savings account loses ~3% real purchasing power each year to inflation.",
+      "learn_cta": "Read (90s)"
+    },
+    "lesson1": {
+      "title": "Needs vs Wants: The Envelope Filter",
+      "summary": "Needs keep you alive and functioning; wants make life enjoyable. Conflating the two is the #1 reason budgets fail.",
+      "content": "A need is non-negotiable: basic monthly grocery ration, rent, utility bills, medication, or study tuition. A want is an upgrade: eating out, brand upgrades, OTT subscriptions, or impulsive shopping. In Household mode, grocery ration is a need, but ordering fancy restaurant takeout is a want. In Student mode, hostel mess and exam books are needs; daily cafe hangouts and gaming passes are wants. The golden rule is simple: fund needs first, cap wants at 30% of your discretionary allowance, and never take an EMI or debt for a want.",
+      "takeaway": "Buy what you need, budget what you want, and never take an EMI for luxury.",
+      "quiz_q": "Which of the following is considered a 'Want' rather than a 'Need'?",
+      "quiz_opt_1": "Basic monthly grocery ration for the household",
+      "quiz_opt_2": "Upgrading to the newest smartphone when your current phone works fine",
+      "quiz_opt_3": "Monthly electricity and cooking gas bill",
+      "quiz_expl": "Upgrading a perfectly working phone is a lifestyle upgrade (want). Core groceries and home utilities are survival needs."
+    },
+    "lesson2": {
+      "title": "50/30/20: Why We Adapt It for India",
+      "summary": "The textbook 50/30/20 rule breaks down in Indian cities where rent and EMIs often take 60% of income. Here is our adaptive formula.",
+      "content": "Western finance says 50% Needs, 30% Wants, 20% Savings. But in India, high urban rents, family support, or college fees mean fixed commitments often exceed 50%. If you strictly follow the textbook rule, you feel guilty and abandon budgeting altogether. PennyPath adapts it: 1) Lock your Fixed Commitments first (Rent + EMIs + Bills). 2) Secure a Savings Target (aim for 20%, but start with whatever is feasible, even 10%). 3) Whatever remains is your Discretionary Allowance (D), converted into a Daily Safe-to-Spend limit (D / 30). No guilt, pure math.",
+      "takeaway": "Fixed expenses first, pay yourself savings second, divide the rest by 30 for daily peace of mind.",
+      "quiz_q": "In PennyPath's adapted formula, what is calculated after securing fixed expenses and savings?",
+      "quiz_opt_1": "Daily Safe-to-Spend discretionary allowance (D / 30)",
+      "quiz_opt_2": "Taking a personal loan to cover the gap",
+      "quiz_opt_3": "Allocating 50% strictly to luxury dining",
+      "quiz_expl": "Daily safe-to-spend (D / 30) gives you an exact daily benchmark so you never accidentally overspend into savings."
+    },
+    "lesson3": {
+      "title": "Emergency Fund: Your Financial Airbag",
+      "summary": "An emergency fund is money kept purely for unexpected shocks — job loss, medical urgency, or urgent home repairs.",
+      "content": "Without an emergency buffer, a single medical bill or broken appliance forces you into high-interest debt or credit card loans. In Household mode, target 3 to 6 months of mandatory living expenses (rent, ration, EMIs, utilities) in a high-yield liquid FD or sweep-in account. In Student mode, maintain a 1-to-2 month buffer for exam fees, laptop repairs, or emergency travel home. This money is NOT for Diwali sales, holiday trips, or stock market trading. It exists for peaceful sleep at night.",
+      "takeaway": "Build a 3-6 month safety buffer before you start investing in equities.",
+      "quiz_q": "Where should an emergency fund ideally be parked?",
+      "quiz_opt_1": "Volatile crypto tokens or intraday stock trades",
+      "quiz_opt_2": "High-safety liquid bank FD or sweep-in savings account",
+      "quiz_opt_3": "Locked in a real estate land plot",
+      "quiz_expl": "Emergency funds must be 100% liquid and principal-safe, accessible within hours during an emergency."
+    },
+    "lesson4": {
+      "title": "How EMIs Really Work: Reducing Balance Truth",
+      "summary": "Monthly installments look small, but interest is front-loaded in the early months. And 'No-Cost EMI' is rarely free.",
+      "content": "When you take a loan, banks use the 'reducing balance' method. In the first year of a 3-year bike or personal loan, up to 60-70% of each EMI goes toward paying interest, not reducing your principal. Furthermore, retailer 'No-Cost EMI' offers typically hide costs in two ways: 1) You forfeit an upfront 5-10% cash discount, and 2) The bank charges a non-refundable processing fee (₹199-₹499) PLUS 18% GST on the interest subvention. If you must borrow, check the total payable amount, not just the monthly figure.",
+      "takeaway": "Calculate total cost including GST and fees before choosing an EMI over cash.",
+      "quiz_q": "Why is a 'No-Cost EMI' often more expensive than paying upfront in cash?",
+      "quiz_opt_1": "Banks add processing fees and 18% GST on interest discount, and you forfeit upfront cash discounts",
+      "quiz_opt_2": "The merchant delivers the product slower",
+      "quiz_opt_3": "It is completely prohibited by law",
+      "quiz_expl": "Banks charge 18% GST on the interest discount and processing charges, making 'free' EMIs cost extra money."
+    },
+    "lesson5": {
+      "title": "Compound Interest: The Power of Starting Early",
+      "summary": "Time in the market matters far more than the amount you invest. Starting with ₹1,000 at age 20 beats ₹5,000 at age 35.",
+      "content": "Simple interest pays return only on your initial deposit. Compound interest pays return on your principal PLUS all previously accumulated returns. In the first 5 years, the growth feels painfully slow. But after 10-15 years, the curve turns vertical — your money earns more than your salary. A 20-year-old student putting away just ₹1,000 every month at 12% annual return builds over ₹35 Lakhs by age 50 with only ₹3.6 Lakhs total investment. Delaying by just 10 years cuts that future wealth by more than half.",
+      "takeaway": "Start small today. Time is the engine of compound growth, not timing the market.",
+      "quiz_q": "What makes compound interest grow exponentially over long periods?",
+      "quiz_opt_1": "Interest is earned on accumulated interest, not just principal",
+      "quiz_opt_2": "The government doubles the money every five years",
+      "quiz_opt_3": "Stock brokers give cash bonuses",
+      "quiz_expl": "By reinvesting returns, your earning base expands exponentially each year like a snowball rolling downhill."
+    },
+    "lesson6": {
+      "title": "SIP vs Lump Sum: Why Regular Habits Win",
+      "summary": "Trying to time market peaks and valleys causes panic. SIP turns market volatility into your biggest advantage.",
+      "content": "A Lump Sum puts all your money into the market on a single day. If the market crashes the next week, you suffer immediate loss and panic. A Systematic Investment Plan (SIP) invests a fixed sum (e.g., ₹1,000 or ₹5,000) on the same date every month regardless of market mood. When the market is high, your money buys fewer mutual fund units; when the market drops, your money buys MORE units at discount prices. This is called 'Rupee Cost Averaging'. For salaried earners and students, SIP removes emotional stress and builds automatic discipline.",
+      "takeaway": "Don't time the market. Automate a monthly SIP on salary day and let averaging work for you.",
+      "quiz_q": "How does a monthly SIP benefit an investor during a stock market downturn?",
+      "quiz_opt_1": "It automatically buys more units at lower prices (Rupee Cost Averaging)",
+      "quiz_opt_2": "The bank refunds all your temporary market losses",
+      "quiz_opt_3": "The SIP automatically stops trading during drops",
+      "quiz_expl": "Lower NAV during downturns allows your fixed monthly SIP amount to accumulate more mutual fund units."
+    },
+    "lesson7": {
+      "title": "Inflation: The Silent Thief of Bank Deposits",
+      "summary": "Leaving cash in a 3% savings bank account feels safe, but at 6% inflation, your money loses purchasing power every year.",
+      "content": "Inflation is the steady rise in prices over time. In India, consumer inflation historically averages around 5% to 7% per year. What cost ₹100 a decade ago costs over ₹180 today (from milk and school books to hospital visits). If your money sits in a regular bank savings account earning 3% interest, you are losing approximately 3% in real purchasing power every single year. Keeping money in cash or low-interest accounts is safe from nominal loss, but guaranteed to suffer real purchasing power destruction. Beat inflation by keeping only emergency funds in liquid FDs and putting long-term savings in growth assets.",
+      "takeaway": "Idle money loses purchasing power. Invest long-term savings where returns beat the 6% inflation benchmark.",
+      "quiz_q": "If bank savings interest is 3% and inflation is 6%, what happens to your money's real value?",
+      "quiz_opt_1": "Purchasing power decreases by roughly 3% each year",
+      "quiz_opt_2": "Purchasing power doubles in five years",
+      "quiz_opt_3": "There is no change in purchasing power",
+      "quiz_expl": "Real return = nominal rate (3%) - inflation (6%) = -3%. Your cash buys fewer goods over time."
+    },
+    "lesson8": {
+      "title": "Risk vs Return: The Twin Sides of Investing",
+      "summary": "Higher return requires enduring short-term volatility. Safe assets protect capital but fail against inflation.",
+      "content": "Risk in finance doesn't mean gambling; it means the degree of fluctuation (volatility) your investment experiences along the way. Assets with guaranteed principal — like Bank Fixed Deposits (FD) or Government Savings Schemes — have near-zero volatility, but their returns (~6.5-7%) barely beat inflation and taxes. Equities and Index Funds, on the other hand, can drop 15% in a bad year, but historically deliver 11-13% annual compound growth over 7+ years. Match your risk to your time horizon: money needed in under 2 years belongs in FDs; money needed after 5+ years belongs in equities.",
+      "takeaway": "Never put short-term money in equities, and never leave long-term wealth solely in fixed deposits.",
+      "quiz_q": "For a financial goal you must pay within 12 months, where should the money be parked?",
+      "quiz_opt_1": "Safe Fixed Deposit or Liquid Fund with zero equity exposure",
+      "quiz_opt_2": "High-risk small-cap stocks for fast multiplication",
+      "quiz_opt_3": "Speculative crypto trading apps",
+      "quiz_expl": "Short-term horizons cannot afford equity market corrections; capital preservation and liquidity are paramount."
+    },
+    "lesson9": {
+      "title": "The Bharat Trio: Gold, FD, and Mutual Funds",
+      "summary": "Understand the three pillars of Indian household wealth and how to balance them for safety and growth.",
+      "content": "Indian personal finance thrives on a three-pillar balance: 1) Fixed Deposits (FD): Unmatched peace of mind and liquidity for emergencies or short-term bills. 2) Gold (Sovereign Gold Bonds or Digital Gold): Cultural pride and a proven hedge during global geopolitical crises and rupee depreciation (prefer gold ETFs or digital gold over jewelry with 20% making charges). 3) Mutual Funds (Nifty 50 Index Funds): The wealth generator that lets ordinary citizens profit from India's corporate economic growth. A balanced household might hold 25% FD for safety, 15% Gold for crisis protection, and 60% Index Funds for future goals.",
+      "takeaway": "FD gives stability, Gold gives crisis protection, Mutual Funds build long-term wealth. Hold all three in proper balance.",
+      "quiz_q": "Which investment vehicle provides the most cost-effective way to invest in gold without losing money on making charges?",
+      "quiz_opt_1": "Gold ETFs or Sovereign Digital Gold without making charges",
+      "quiz_opt_2": "Buying physical jewelry with 20% craftsmanship fees",
+      "quiz_opt_3": "Trading speculative commodity futures contracts",
+      "quiz_expl": "Gold ETFs track pure 24K gold prices with zero making charges or storage risks."
+    },
+    "lesson10": {
+      "title": "Spotting Scams: The 'Guaranteed Return' Trap",
+      "summary": "If an investment scheme promises high, guaranteed returns with zero risk, it is 100% a fraud. Protect your money.",
+      "content": "Financial fraudsters prey on two human emotions: greed and urgency. Common Indian traps include: 1) 'Double your money in 3 months' Ponzi schemes; 2) VIP Telegram/WhatsApp stock tip channels charging subscription fees; 3) Unregistered app-based loan traps that access your contacts; 4) 'Part-time work' scams paying small amounts for YouTube likes before demanding deposits. The cardinal rule of finance: High returns are mathematically impossible without high risk. Legitimate brokers and mutual funds are strictly registered with SEBI or RBI. Always verify registration on sebi.gov.in before transferring a single rupee.",
+      "takeaway": "Guaranteed high return + zero risk = 100% scam. Always verify SEBI/RBI registration.",
+      "quiz_q": "What is the biggest red flag that an investment offer is a fraudulent scam?",
+      "quiz_opt_1": "Promising high 'guaranteed' returns with zero risk or volatility",
+      "quiz_opt_2": "Being registered with SEBI and listed on the NSE stock exchange",
+      "quiz_opt_3": "Providing audited regulatory annual financial statements",
+      "quiz_expl": "Genuine market investments always carry market risk. Anyone guaranteeing high risk-free return is running a scam."
+    }
+  },
+  "pitch": {
+    "guide_title": "5-Minute Pitch Mode",
+    "reset_button": "Reset Demo",
+    "prev_step": "Previous Step",
+    "next_step": "Next Step",
+    "step1": {
+      "title": "1. Seed Rohan Demo",
+      "cue": "Load 60 days of real Indian transaction data offline",
+      "btn": "Load Rohan Persona"
+    },
+    "step2": {
+      "title": "2. Safe-to-Spend Daily Allowance",
+      "cue": "Show how daily limit prevents month-end panic",
+      "btn": "View Dashboard"
+    },
+    "step3": {
+      "title": "3. Shortfall Review & Engine Fixes",
+      "cue": "Show live mathematical deficit resolution",
+      "btn": "Trigger Shortfall"
+    },
+    "step4": {
+      "title": "4. SEBI Educational Invest Lab",
+      "cue": "Demonstrate emergency fund readiness & asset allocation",
+      "btn": "Open Invest Lab"
+    },
+    "step5": {
+      "title": "5. Zero English Leaks Hindi Experience",
+      "cue": "Switch to natural Hindustani interface with instant parity",
+      "btn": "Switch to हिन्दी"
+    }
+  },
+  "horizon": "Time Horizon",
+  "income_stability": "Income Stability",
+  "reaction_drop": "Reaction to Market Dip",
+  "goal_type": "Goal Type",
+  "experience": "Investment Experience",
+  "dependents": "Family Dependents",
+  "food": "Food & Mess",
+  "goal": "Goal",
+  "test": "Test Verification Key",
+  "about": {
+    "problem": "Pennypath exists to help Indians take control of their personal finances through intelligent envelope budgeting. Many people struggle to track spending, save consistently, and plan for future goals without feeling overwhelmed by complex financial tools.",
+    "problemDescription": "Our mission is to provide a simple, offline-first financial management platform that adapts to Indian lifestyles - whether you are a student managing pocket money, a household managing family expenses, or a first-job earner navigating EMIs and savings.",
+    "team": "Team",
+    "teamMember1": "Ishaan Kumar",
+    "role1": "Lead Developer",
+    "teamMember2": "Priya Sharma",
+    "role2": "Product Designer",
+    "teamMember3": "Rohan Singh",
+    "role3": "Financial Engineer",
+    "vision": "Vision",
+    "visionDescription": "To become India's most trusted personal finance companion, enabling every Indian to budget smartly, save consistently, and grow wealth responsibly - all while keeping their data private and their finances completely offline.",
+    "contact": "Contact",
+    "email": "Email",
+    "email2": "pennypath@example.com",
+    "phone": "Phone",
+    "phone2": "+91 98765 43210"
+  }
+}

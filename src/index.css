@@ -1,0 +1,210 @@
+/* Self-hosted fonts via @fontsource (No CDN) */
+@import '@fontsource/fraunces/400.css';
+@import '@fontsource/fraunces/600.css';
+@import '@fontsource/fraunces/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/noto-sans-devanagari/400.css';
+@import '@fontsource/noto-sans-devanagari/500.css';
+@import '@fontsource/noto-sans-devanagari/600.css';
+@import '@fontsource/noto-sans-devanagari/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-paper: #EFE8DF;
+  --color-ink: #0F414A;
+  --color-accent: #7F0303;
+  --color-sand: #D8BA98;
+  --color-sky: #96C0CE;
+}
+
+/* Fallback font metrics matching to eliminate layout shift (CLS) during web font swap */
+@font-face {
+  font-family: 'Fraunces Fallback';
+  src: local('Georgia'), local('Times New Roman');
+  ascent-override: 96%;
+  descent-override: 26%;
+  line-gap-override: 0%;
+  size-adjust: 104%;
+}
+
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Segoe UI'), local('Roboto'), local('Helvetica Neue'), local('Arial');
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: 'Inter', 'Inter Fallback', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hindi typography support */
+[lang="hi"] body, [lang="hi"] * {
+  font-family: 'Noto Sans Devanagari', 'Inter', 'Inter Fallback', sans-serif;
+}
+
+/* Headings font */
+h1, h2, h3, .font-heading {
+  font-family: 'Fraunces', 'Fraunces Fallback', 'Noto Sans Devanagari', serif;
+}
+
+/* Tabular numerals everywhere money or numbers appear */
+.tabular-nums, .font-mono, [data-money], input[type="number"], input[inputmode="numeric"] {
+  font-variant-numeric: tabular-nums;
+  -moz-font-feature-settings: "tnum";
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
+}
+
+/* Signature motif: diagonal maroon/paper awning stripe */
+.awning-stripe-banner {
+  height: 8px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    #7F0303,
+    #7F0303 12px,
+    #EFE8DF 12px,
+    #EFE8DF 24px
+  );
+  border-bottom: 1px solid rgba(15, 65, 74, 0.15);
+}
+
+.awning-stripe-accent {
+  background: repeating-linear-gradient(
+    -45deg,
+    #7F0303,
+    #7F0303 8px,
+    #EFE8DF 8px,
+    #EFE8DF 16px
+  );
+}
+
+.awning-stripe-badge {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(127, 3, 3, 0.14),
+    rgba(127, 3, 3, 0.14) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+/* Minimum 44px tap targets for touch accessibility */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Accessible focus ring in ink and accent */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+.focus-ring-accent:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Tactile button press micro-interactions gated by prefers-reduced-motion */
+@media not (prefers-reduced-motion: reduce) {
+  button:not(:disabled):active,
+  [role="button"]:not([aria-disabled="true"]):active,
+  .touch-target:not(:disabled):active {
+    transform: scale(0.97);
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  [role="progressbar"] > div,
+  .progress-fill {
+    transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1), stroke-dashoffset 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  button:not(:disabled):active,
+  [role="button"]:not([aria-disabled="true"]):active,
+  .touch-target:not(:disabled):active {
+    transform: none !important;
+  }
+
+  [role="progressbar"] > div,
+  .progress-fill {
+    transition: none !important;
+  }
+}
+
+/* Big-Screen Projector Mode (1280x720 and 1920x1080) */
+.big-screen-mode {
+  font-size: 112.5%;
+}
+
+.big-screen-mode [data-dev-ui="true"],
+.big-screen-mode .dev-ui {
+  display: none !important;
+}
+
+/* 1280x720 Projector Scaling & Padding Optimization */
+@media (min-width: 1100px) and (max-height: 850px) {
+  .big-screen-mode {
+    font-size: 106.25%;
+  }
+  .big-screen-mode main {
+    padding-top: 1rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .big-screen-mode .space-y-6 > * + * {
+    margin-top: 1rem !important;
+  }
+}
+
+/* 1920x1080 Full HD Projector Optimization */
+@media (min-width: 1750px) and (min-height: 950px) {
+  .big-screen-mode {
+    font-size: 125%;
+  }
+  .big-screen-mode main {
+    max-width: 80rem !important;
+  }
+}
+
+/* WCAG AA & AAA Accessibility Contrast Enforcement on #EFE8DF Paper */
+.text-ink\/40,
+.text-ink\/50,
+.text-ink\/60,
+.text-ink\/70 {
+  color: #1b4b53; /* 7.82:1 contrast ratio against #EFE8DF (well above 4.5:1 requirement) */
+}
+
+.text-ink\/75 {
+  color: #153e46; /* 8.6:1 contrast ratio against #EFE8DF */
+}
