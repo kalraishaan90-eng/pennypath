@@ -50,6 +50,7 @@ const InsightsScreen = React.lazy(() =>
 );
 const DesignShowcase = React.lazy(() =>
   import('./pages/DesignShowcase').then((m) => ({ default: m.DesignShowcase }))
+);
 export const AppContent: React.FC = () => {
   const location = useLocation();
   const { isAuthenticated, isOnboarded, isDemo, startDemo } = useAuth();
