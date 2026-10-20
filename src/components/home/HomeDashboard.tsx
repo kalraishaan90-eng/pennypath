@@ -16,7 +16,8 @@ import { QuickAddFAB } from './QuickAddFAB';
 import { AddExpenseSheet } from './AddExpenseSheet';
 import { PlanScreenModal } from './PlanScreenModal';
 import { DemoTransactionSimulator } from './DemoTransactionSimulator';
-import { RotateCcw, X, CheckCircle2 } from 'lucide-react';
+import { UpiPaymentModal } from '../payment/UpiPaymentModal';
+import { RotateCcw, X, CheckCircle2, QrCode, Sparkles } from 'lucide-react';
 
 export const HomeDashboard: React.FC = () => {
   const { t } = useTranslation();
@@ -52,6 +53,7 @@ export const HomeDashboard: React.FC = () => {
   // Modals
   const [isAddExpenseOpen, setIsAddExpenseOpen] = useState<boolean>(false);
   const [isPlanOpen, setIsPlanOpen] = useState<boolean>(false);
+  const [isUpiPaymentOpen, setIsUpiPaymentOpen] = useState<boolean>(false);
 
   // Load initial data
   const loadData = async () => {
@@ -193,6 +195,37 @@ export const HomeDashboard: React.FC = () => {
           onResetDemo={handleResetDemo}
         />
 
+        {/* Instant UPI Scan & Pay Banner */}
+        <section className="mt-3 bg-sand/20 border-2 border-sand-dark/40 rounded-card p-3.5 sm:p-4 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-ink text-paper flex items-center justify-center font-bold text-sm shrink-0 shadow-xs">
+              <QrCode className="w-5 h-5 text-sky" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <h3 className="text-sm font-bold text-ink">
+                  UPI Payments & Auto-Expense
+                </h3>
+                <span className="text-[10px] font-bold text-accent bg-accent/15 px-2 py-0.2 rounded-full">
+                  Auto-Tracking
+                </span>
+              </div>
+              <p className="text-xs text-ink/75 mt-0.5">
+                Scan QR or enter bank details. PennyPath automatically asks what item you bought and calculates your envelope expenses.
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setIsUpiPaymentOpen(true)}
+            className="touch-target px-4 py-2 bg-ink hover:bg-ink-light active:bg-ink-dark text-paper font-bold text-xs sm:text-sm rounded-btn shadow-sm flex items-center justify-center gap-2 transition-all shrink-0 self-start sm:self-auto"
+          >
+            <QrCode className="w-4 h-4 text-sky" />
+            <span>Scan & Pay (UPI)</span>
+          </button>
+        </section>
+
         {/* Demo verification strip for instant math test */}
         {envelopes.length > 0 && (
           <DemoTransactionSimulator
@@ -271,6 +304,18 @@ export const HomeDashboard: React.FC = () => {
         envelopes={envelopes}
         onAddExpense={handleAddExpense}
         onAddIncome={handleQuickAddIncome}
+      />
+
+      {/* UPI Payment Modal */}
+      <UpiPaymentModal
+        isOpen={isUpiPaymentOpen}
+        onClose={() => {
+          setIsUpiPaymentOpen(false);
+          loadData();
+        }}
+        onPaymentSuccess={() => {
+          loadData();
+        }}
       />
 
       {/* Undo Toast Notification */}

@@ -8,6 +8,7 @@ import { formatINR, parseINR } from '../engine/currency';
 import { parseUPISMS, SAMPLE_UPI_SMS, ParsedSMSResult } from '../utils/smsParser';
 import { CategoryIcon } from '../components/common/CategoryIcon';
 import { AddExpenseSheet } from '../components/home/AddExpenseSheet';
+import { UpiPaymentModal } from '../components/payment/UpiPaymentModal';
 import {
   Plus,
   ArrowUpRight,
@@ -29,6 +30,7 @@ import {
   Wallet,
   Sparkles,
   ChevronDown,
+  QrCode,
 } from 'lucide-react';
 
 const ANCHOR_TODAY = '2026-10-20';
@@ -59,6 +61,7 @@ export const TransactionsPage: React.FC = () => {
 
   // Modals & Sheets
   const [isAddSheetOpen, setIsAddSheetOpen] = useState(false);
+  const [isUpiModalOpen, setIsUpiModalOpen] = useState(false);
   const [sheetInitialMode, setSheetInitialMode] = useState<'expense' | 'income'>('expense');
   const [selectedEnvelopeForAdd, setSelectedEnvelopeForAdd] = useState<string | undefined>(undefined);
 
@@ -468,6 +471,14 @@ export const TransactionsPage: React.FC = () => {
           >
             <Plus className="w-4 h-4 stroke-[2.5]" />
             <span>{t('tx.add_expense', { defaultValue: 'Add Expense' })}</span>
+          </button>
+
+          <button
+            onClick={() => setIsUpiModalOpen(true)}
+            className="touch-target px-3.5 py-2 bg-ink text-paper hover:bg-ink-light font-bold text-xs sm:text-sm rounded-btn shadow-sm flex items-center gap-1.5 transition-all"
+          >
+            <QrCode className="w-4 h-4 text-sky" />
+            <span>Scan & Pay (UPI)</span>
           </button>
 
           <button
@@ -1279,6 +1290,19 @@ export const TransactionsPage: React.FC = () => {
           </div>
         </div>
       )}
+      {/* UPI Payment Modal */}
+      <UpiPaymentModal
+        isOpen={isUpiModalOpen}
+        onClose={() => {
+          setIsUpiModalOpen(false);
+          loadTransactions();
+          appContext?.refreshData();
+        }}
+        onPaymentSuccess={() => {
+          loadTransactions();
+          appContext?.refreshData();
+        }}
+      />
     </div>
   );
 };

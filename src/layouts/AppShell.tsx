@@ -7,7 +7,7 @@ import {
   Compass,
   TrendingUp,
   MoreHorizontal,
-  Palette,
+  QrCode,
   Globe,
   PieChart,
   BellRing,
@@ -103,6 +103,27 @@ export const AppShell: React.FC = () => {
               })}
 
               <div className="pt-4 mt-4 border-t border-ink-10 space-y-1">
+                {/* UPI Scan & Pay Link */}
+                <NavLink
+                  to="/pay"
+                  className={({ isActive }) => `
+                    touch-target flex items-center justify-between px-4 py-2.5 rounded-btn text-xs font-semibold uppercase tracking-wider transition-colors
+                    ${
+                      isActive
+                        ? 'bg-ink text-paper shadow-xs font-bold'
+                        : 'text-ink/80 hover:bg-ink-10 hover:text-ink'
+                    }
+                  `}
+                >
+                  <div className="flex items-center gap-3.5">
+                    <QrCode className="w-4 h-4 shrink-0 text-accent" />
+                    <span>{t('nav.pay', 'Scan & Pay')}</span>
+                  </div>
+                  <Badge variant="accent" size="sm">
+                    UPI
+                  </Badge>
+                </NavLink>
+
                 <NavLink
                   to="/lessons"
                   className={({ isActive }) => `
@@ -116,21 +137,6 @@ export const AppShell: React.FC = () => {
                 >
                   <BookOpen className="w-4 h-4 shrink-0 text-accent" />
                   <span>{t('nav.lessons', 'Learn')}</span>
-                </NavLink>
-
-                <NavLink
-                  to="/design"
-                  className={({ isActive }) => `
-                    touch-target flex items-center gap-3.5 px-4 py-2.5 rounded-btn text-xs font-semibold uppercase tracking-wider transition-colors
-                    ${
-                      isActive
-                        ? 'bg-accent text-paper shadow-xs'
-                        : 'text-ink/60 hover:text-accent hover:bg-accent-10'
-                    }
-                  `}
-                >
-                  <Palette className="w-4 h-4 shrink-0" />
-                  <span>{t('common.viewDesign')}</span>
                 </NavLink>
               </div>
             </nav>
@@ -184,12 +190,12 @@ export const AppShell: React.FC = () => {
 
             <div className="flex items-center gap-2">
               <Link
-                to="/design"
-                className="touch-target p-2 text-ink/70 hover:text-ink rounded-btn hover:bg-ink-10"
-                title="Design System"
-                aria-label="Design System Showcase"
+                to="/pay"
+                className="touch-target p-2 text-ink/80 hover:text-ink rounded-btn hover:bg-ink-10 flex items-center gap-1.5"
+                title="Scan & Pay (UPI)"
+                aria-label="Scan & Pay (UPI)"
               >
-                <Palette className="w-5 h-5 text-accent" />
+                <QrCode className="w-5 h-5 text-accent" />
               </Link>
               <button
                 type="button"

@@ -48,8 +48,8 @@ const RemindersScreen = React.lazy(() =>
 const InsightsScreen = React.lazy(() =>
   import('./components/insights/InsightsScreen').then((m) => ({ default: m.InsightsScreen }))
 );
-const DesignShowcase = React.lazy(() =>
-  import('./pages/DesignShowcase').then((m) => ({ default: m.DesignShowcase }))
+const UpiPaymentPage = React.lazy(() =>
+  import('./pages/UpiPaymentPage').then((m) => ({ default: m.UpiPaymentPage }))
 );
 export const AppContent: React.FC = () => {
   const location = useLocation();
@@ -188,11 +188,12 @@ export const AppContent: React.FC = () => {
             <Route path="insights" element={<InsightsScreen />} />
             <Route path="add" element={<AddPage />} />
             <Route path="invest" element={<InvestLabScreen />} />
+            <Route path="pay" element={<UpiPaymentPage />} />
             <Route path="more" element={<GoalsScreen />} />
             <Route path="calculators" element={<CalculatorsScreen />} />
             <Route path="lessons" element={<MicroLessonsScreen />} />
-            <Route path="design" element={<DesignShowcase />} />
             <Route path="about" element={<AboutPage />} />
+            <Route path="design" element={<Navigate to="/" replace />} />
             <Route path="*"
               element={<Navigate to="/" replace />}
             />
